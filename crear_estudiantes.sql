@@ -4,5 +4,6 @@ create table estudiantes(
 	apellido varchar(50) not null,
 	email varchar(50) not null,
 	fecha_nacimiento date not null,
+	curso varchar(20) not null,
 	constraint cedula_pk primary key(cedula)
 )
