@@ -22,3 +22,22 @@ WHERE codigo is null;
 SELECT * FROM cuentas
 UPDATE cuentas SET saldo=10
 WHERE cedula_propietario = '17';
+
+--ESTUDIANTES
+SELECT * FROM estudiantes
+UPDATE estudiantes SET apellido='Hernandez'
+WHERE cedula LIKE '17%';
+
+--REGISTROS_ENTRADAS
+SELECT * FROM registros_entradas
+UPDATE registros_entradas SET cedula= '0982345679'
+WHERE fecha BETWEEN '01/08/2000' AND '31/08/2023';
+
+--VIDEOJUEGOS
+SELECT * FROM videojuegos
+UPDATE videojuegos SET descripcion = 'Mejor puntudo'
+WHERE valoracion>9;
+
+--TRANSACCIONES
+SELECT * FROM transacciones
+UPDATE transacciones SET 
