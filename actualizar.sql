@@ -40,4 +40,7 @@ WHERE valoracion>9;
 
 --TRANSACCIONES
 SELECT * FROM transacciones
-UPDATE transacciones SET 
+UPDATE transacciones SET tipo='transferencia'
+WHERE (monto > 100 and monto < 500) 
+AND (fecha BETWEEN '01/09/2000' AND '30/09/2023') 
+AND (hora BETWEEN '14:00' AND '20:00');
