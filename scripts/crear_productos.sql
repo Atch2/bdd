@@ -6,7 +6,7 @@ create table productos(
 	precio money not null,
 	stock int not null,
 	constraint codigo_pk primary key(codigo)
-)
+);
 
 insert into productos(codigo,nombre,descripcion,precio,stock) 
 values (1,'Jabón','Lava todo',3.50,10);

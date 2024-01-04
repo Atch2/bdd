@@ -4,7 +4,7 @@ create table videojuegos(
 	descripcion varchar(300),
 	valoracion int not null,
 	constraint codigo_videojuego_pk primary key(codigo)
-)
+);
 --VIDEOJUEGOS
 insert into videojuegos(codigo, nombre, descripcion, valoracion)
 values(07563, 'Call of Duty', 'juego de terror', 9);

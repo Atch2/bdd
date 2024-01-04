@@ -6,7 +6,7 @@ create table cuentas(
 	fecha_creacion date not null,
 	saldo money not null,
 	constraint numero_cuenta_pk primary key(numero_cuenta)
-)
+);
 
 insert into cuentas (numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values (25569,17504,'15/05/2023',500);

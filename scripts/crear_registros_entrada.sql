@@ -4,7 +4,7 @@ create table registros_entrada(
 	fecha date not null,
 	hora time not null,
 	constraint codigo_registro_pk primary key(codigo_registro)
-)
+);
 --REGISTROS_ENTRADA
 insert into registros_entrada(codigo_registro, cedula_empleado, fecha, hora)
 values(12345, '1754416489', '18/06/2023', '7:00');

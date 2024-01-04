@@ -6,7 +6,7 @@ create table transacciones(
 	fecha date not null,
 	hora time not null,
 	constraint codigo_transaccion_pk primary key(codigo)
-)
+);
 
 
 --TRANSACCIONES
@@ -25,8 +25,8 @@ values(32165, '51437', 1050, 'D', '25/04/2020', '15:48');
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(78542, '02147', 300, 'D', '20/03/2019', '22:19');
 
-insert into transacciones(codigo, numero_cuenta, monto, tipo, hora)
-values(23210, '32015', 400, 'C', '13:55');
+insert into transacciones(codigo, numero_cuenta, monto, tipo,fecha, hora)
+values(23210, '32015', 400, 'C','21/04/2020', '13:55');
 
 insert into transacciones(codigo, numero_cuenta, monto, tipo, fecha, hora)
 values(35412, '85214', 600, 'D', '07/12/2015', '20:14');
